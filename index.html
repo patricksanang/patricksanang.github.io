@@ -40,9 +40,16 @@
 
 	<link rel="stylesheet" href="css/style.css">
 
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script type="text/javascript">
+		$( "#clickservices" ).click(function() {
+			alert( "Handler for .click() called." );
+		});
+	</script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -58,12 +65,11 @@
 				<div class="row">
 					<div class="col-md-12">
 						<ul>
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="work.html">Work</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li class="active"><a href="#">Home</a></li>
+							<li><a id="clickservices">Services</a></li>
+							<li><a href="#projects">Portfolio</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -102,7 +108,7 @@
 			</div>
 		</header>
 		<div id="colorlib-about">
-			<div class="container">
+			<div class="container" id="about">
 				<div class="row text-center">
 					<h2 class="bold">About</h2>
 				</div>
@@ -124,7 +130,7 @@
 									<h2><span>Patrick</span><span>Sanang</span></h2>
 								</div>
 								<div class="item">
-									<h2><span>I'm</span><span>A Web developer</span></h2>
+									<h2><span>I'm</span><span>A Full-stack developer with skills in product management</span></h2>
 								</div>
 							</div>
 							<div class="desc">
@@ -138,13 +144,14 @@
 									technologies as HTML5, CSS3, ReactJS, React Native, React Native Web, Graph QL, Appolo, Serverless, Semantic UI, NodeJS, Webpack, Babel, Django, Firebase, AWS, GCP, etc...
 								</p>
 								<p class="colorlib-social-icons">
+									<a href="https://www.linkedin.com/in/sanang-sigmou-patrick-mendel/"><i class="icon-linkedin4"></i></a>
+									<a href="https://github.com/patricksanang/"><i class="icon-github"></i></a>
+									<a href="https://gitlab.com/patricksanang/"><i class="icon-gitlab"></i></a>
 									<a href="https://www.facebook.com/patrick.sanang"><i class="icon-facebook4"></i></a>
 									<a href="https://twitter.com/patrick_sanang"><i class="icon-twitter3"></i></a>
 									<a href="https://plus.google.com/110033799197529065836"><i class="icon-googleplus"></i></a>
-									<a href="https://github.com/patricksanang/"><i class="icon-github"></i></a>
-									<a href="https://gitlab.com/patricksanang/"><i class="icon-gitlab"></i></a>
 								</p>
-								<p><a href="#" class="btn btn-primary btn-outline">Contact Me!</a></p>
+								<p><a href="#contact" class="btn btn-primary btn-outline">Contact Me!</a></p>
 							</div>
 						</div>
 					</div>
@@ -152,7 +159,7 @@
 			</div>
 		</div>
 		<div id="colorlib-services">
-			<div class="container">
+			<div class="container" id="services">
 				<div class="row text-center">
 					<h2 class="bold">Services</h2>
 				</div>
@@ -179,7 +186,7 @@
 												<li>HTML5/CSS3</li>
 												<li>REACT JS, REACT Native Web</li>
 												<li>Node JS, Webpack, Babel, ES6, Appolo, GraphQL</li>
-												<li>Bootstrap/Semantic UI, JQUERY</li>
+												<li>Bootstrap/Semantic UI/Material Design, JQUERY</li>
 											</ul>
 										</div>
 										<div class="services animate-box">
@@ -221,14 +228,14 @@
 		</div>
 
 		<div id="colorlib-work">
-			<div class="container">
+			<div class="container" id="projects">
 				<div class="row text-center">
 					<h2 class="bold">Works</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
 						<span>Portfolio</span>
-						<h2>Done Projects</h2>
+						<h2>Some Done Projects</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -239,151 +246,48 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-1.jpg);">
+							<a href="images/works/monitoringreporting.jpg" title="Traveler Interface of Monitoring and Reporting" content="Use the high amount of data (big data) received by Traveler sources (mobile apps installed in a fleet of vehicles) about trips, road accidents and drivers in order to produce insights and reports about performance of drivers, trip companies (as Touristique, Finexx, etc...), causes of accidents to NGOs (UN, etc...), minister of transportation in Cameroon, etc... And then, predict the accidents by observing the behavior of a driver (by tracking some predefined KPIs during its trips). And if a bad behavior is predicted, the driver and its management is notified about its manner to drive." text="See more here..." link="https://monitoringreporting-2b31e.firebaseapp.com/" class="gallery image-popup-project-link text-center work-img" style="background: linear-gradient(rgba(20, 20 , 20, .5), rgba(20 , 20, 20, .5)), url(images/works/monitoringreporting.jpg)">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Pursuing Best</h2>
+										<h2>Traveler</h2>
 									</div>
 								</div>
 							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
-								</div>
-							</div>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-2.jpg);">
+							<a href="images/works/blu-cash.jpg" title="Blu-Cash" content="Client web and mobile app which permit him to transfer amount of money between mobile operators at low price and automatically." text="See more here..." link="https://blu-cash.net/" class="gallery image-popup-project-link text-center work-img" style="background: linear-gradient(rgba(20, 20 , 20, .5), rgba(20 , 20, 20, .5)), url(images/works/blu-cash.jpg)">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Coordinates</h2>
+										<h2>BluCash</h2>
 									</div>
 								</div>
 							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View Details</a></p>
-								</div>
-							</div>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-3.jpg);">
+							<a href="images/works/businessblu-cash.jpg" title="Blucash For Enterprise" content="A platform to make secure payments through a gateway from any merchant website by using his mobile money account. It works with almost the mobile money operators in Africa." text="See more here..." link="https://business.blu-cash.net/" class="gallery image-popup-project-link text-center work-img" style="background: linear-gradient(rgba(20, 20 , 20, .5), rgba(20 , 20, 20, .5)), url(images/works/businessblu-cash.jpg)">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Cristall</h2>
+										<h2>BluCash Business</h2>
 									</div>
 								</div>
 							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
-								</div>
-							</div>
 						</div>
 					</div>
-					<div class="col-md-12">
+					<div class="col-md-6">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-4.jpg);">
+							<a href="images/works/igamers.jpg" title="iGamers" content="Build technologies to improve the access of African gamers to professional gaming and e-sport competitions." text="See more here..." link="http://igamers.fun/" class="gallery image-popup-project-link text-center work-img" style="background: linear-gradient(rgba(20, 20 , 20, .5), rgba(20 , 20, 20, .5)), url(images/works/igamers.jpg)">
 								<div class="display-t">
 									<div class="work-name">
-										<h2>Black</h2>
+										<h2>iGamers</h2>
 									</div>
 								</div>
 							</a>
-							<div class="col-md-4 col-md-offset-4">
-								<div class="desc">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-									<p class="read"><a href="#">View details</a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div id="colorlib-blog">
-			<div class="container">
-				<div class="row text-center">
-					<h2 class="bold">Blog</h2>
-				</div>
-				<div class="row">
-					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Blog</span>
-						<h2>Read Our Case</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="rotate">
-							<h2 class="heading">Our Blog</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row animate-box">
-					<div class="owl-carousel1">
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-1.jpg" alt="html5 bootstrap by colorlib.com">
-										<div class="overlay"></div>
-										<div class="link">
-											<span class="read">Read more</h2>
-										</div>
-									</a>
-									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-2.jpg" alt="html5 bootstrap by colorlib.com">
-										<div class="overlay"></div>
-										<div class="link">
-											<span class="read">Read more</h2>
-										</div>
-									</a>
-									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12">
-								<div class="article">
-									<a href="blog.html" class="blog-img">
-										<img class="img-responsive" src="images/img-3.jpg" alt="html5 bootstrap by colorlib.com">
-										<div class="overlay"></div>
-										<div class="link">
-											<span class="read">Read more</h2>
-										</div>
-									</a>
-									<div class="desc">
-										<span class="meta">15, Feb 2018</span>
-										<h2><a href="blog.html">A Japanese Constellation</a></h2>
-										<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -414,8 +318,8 @@
 							<div class="col-md-12 text-center">
 								<div class="testimony">
 									<blockquote>
-										<p>"A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-										<span>" &mdash; George Brooks</span>
+										<p>"Patrick is an opinion leader. A crazy programmer, who loves what he does, who likes to play with the data, but especially who likes to produce numbers. For having worked with him, he is an off-road worker.</p>
+										<span>" &mdash; Rostand YOBA (Project Manager - Mobile Financial Services at MTN)</span>
 									</blockquote>
 								</div>
 							</div>
@@ -424,18 +328,8 @@
 							<div class="col-md-12 text-center">
 								<div class="testimony">
 									<blockquote>
-										<p>"Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-										<span>" &mdash; Daniel Foster</span>
-									</blockquote>
-								</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="col-md-12 text-center">
-								<div class="testimony">
-									<blockquote>
-										<p>"When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove</p>
-										<span>" &mdash; Liam Jenkins</span>
+										<p>"Patrick is a good team worker and a leader. During the time I worked with him, I particularly liked his analytical mind, love of work well done, sense of organization and humor. He's a good engineer that can conduct project from beginning to end.</p>
+										<span>" &mdash; Hubert NOYESSIE</span>
 									</blockquote>
 								</div>
 							</div>
@@ -447,63 +341,39 @@
 
 		<footer>
 			<div id="footer">
-				<div class="container">
+				<div class="container" id="contact">
 					<div class="row">
-						<div class="col-md-4 col-pb-sm">
+						<div class="col-md-6 col-pb-sm">
 							<div class="row">
 								<div class="col-md-10">
 									<h2>Let's Talk</h2>
-									<p>A small river named Duden flows by their place and supplies.</p>
-									<p><a href="#">noah@info.com</a></p>
+									<p><a href="#">patrick.sanang@gmail.com</a></p>
 									<p class="colorlib-social-icons">
-										<a href="#"><i class="icon-facebook4"></i></a>
-										<a href="#"><i class="icon-twitter3"></i></a>
-										<a href="#"><i class="icon-googleplus"></i></a>
-										<a href="#"><i class="icon-dribbble2"></i></a>
+										<a href="https://www.linkedin.com/in/sanang-sigmou-patrick-mendel/"><i class="icon-linkedin4"></i></a>
+										<a href="https://github.com/patricksanang/"><i class="icon-github"></i></a>
+										<a href="https://gitlab.com/patricksanang/"><i class="icon-gitlab"></i></a>
+										<a href="https://www.facebook.com/patrick.sanang"><i class="icon-facebook4"></i></a>
+										<a href="https://twitter.com/patrick_sanang"><i class="icon-twitter3"></i></a>
+										<a href="https://plus.google.com/110033799197529065836"><i class="icon-googleplus"></i></a>
 									</p>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4 col-pb-sm">
-							<h2>Latest Blog</h2>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-1.jpg);"></a>
-								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Art Gallery in Japan</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-2.jpg);"></a>
-								<div class="desc">
-									<span>February 9, 2018</span>
-									<h3><a href="#">A Japanese Constellation</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/img-3.jpg);"></a>
-								<div class="desc">
-									<span>February 15, 2018</span>
-									<h3><a href="#">Road Trip</a></h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 col-pb-sm">
-							<h2>Newsletter</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
-							<div class="subscribe text-center">
-								<div class="form-group">
-									<input type="text" class="form-control text-center" placeholder="Enter Email address">
-									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
-								</div>
-							</div>
+						<div class="col-md-6 col-pb-sm">
+							<h3>My Address</h3>
+							<ul class="contact-info">
+								<li><span><i class="icon-map5"></i></span>Technipole - Polytechnique, Yaounde Cameroon</li>
+								<li><span><i class="icon-phone4"></i></span>+237 698158390</li>
+								<li><span><i class="icon-envelope2"></i></span><a href="#">patrick.sanang@gmail.com</a></li>
+								<li><span><i class="icon-globe3"></i></span><a href="https://patricksanang.github.io/">https://patricksanang.github.io/</a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<p>
 								&copy;
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+Copyright <script>document.write(new Date().getFullYear());</script>
 							</p>
 						</div>
 					</div>
@@ -513,8 +383,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script>
 
 	</div>
 
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
