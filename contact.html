@@ -3,25 +3,25 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Noah Template</title>
+	<title>Patrick Sanang</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="Personal website of Patrick Sanang" />
+	<meta name="keywords" content="Patrick Sanang" />
+	<meta name="author" content="Patrick Sanang" />
 
-  <!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="Personal Website"/>
+	<meta property="og:image" content="https://patricksanang.github.io/images/free.jpg	"/>
+	<meta property="og:url" content="https://patricksanang.github.io/images/free.jpg"/>
+	<meta property="og:site_name" content="Patrick Sanang Website"/>
+	<meta property="og:description" content="Personal website of Patrick Sanang, a fullstack developer"/>
+	<meta name="twitter:title" content="Personal Website" />
+	<meta name="twitter:image" content="https://patricksanang.github.io/images/free.jpg" />
+	<meta name="twitter:url" content="https://patricksanang.github.io/images/free.jpg" />
+	<meta name="twitter:card" content="Personal website of Patrick Sanang, a fullstack developer" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="images/patrick.ico">
 
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
@@ -142,26 +142,36 @@
 							</div>
 							<div class="col-md-7 col-md-push-1 animate-box">
 								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<textarea name="" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+									<form id="contact" class="ui form">
+										<div class="col-md-12">
+											<div id="alert" class="alert alert-light" style="display:none; text-align: center">
+	  										<strong id="response" style="color: gray"></strong>
+												<strong id="responseerror" style="color: red"></strong>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Name">
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Message"></textarea>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-6">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
+										<div class="col-md-6">
+											<div class="form-group">
+												<div class="loader">
+												</div>
+												<input name="sendername" id="sendername" type="text" class="form-control" placeholder="Name" required>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="submit" value="Send Message" class="btn btn-primary">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input name="senderemail" id="senderemail" type="email" class="form-control" placeholder="Email" required>
+											</div>
 										</div>
-									</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<input type="submit" value="Send Message" class="btn btn-primary">
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
 						</div>

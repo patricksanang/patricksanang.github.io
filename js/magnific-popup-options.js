@@ -105,3 +105,41 @@ $(document).ready(function() {
 
 
 });
+
+$( "#contact" ).submit(function( event ) {
+  event.preventDefault();
+
+	var email = $( "#senderemail" ).val()
+	var sendername = $( "#sendername" ).val()
+	var message = $( "#message" ).val()
+
+	$( "#contact" ).addClass("loading")
+	$.ajax({
+     type: "POST",
+     url: "https://sendemailpublic.herokuapp.com/api/email/",
+     data: {
+			 email: email,
+			 sendername: sendername,
+			 message: message,
+			 source: "patricksanang.github.io"
+		 },
+     success: function(data){
+			 	$( "#senderemail" ).text("")
+				$( "#sendername" ).text("")
+				$( "#message" ).text("")
+				$( "#response" ).text("Message sent with success!")
+				$( "#responseerror" ).text("")
+
+     },
+		 complete: function(){
+			 $( "#contact" ).removeClass("loading")
+			 $( "#alert" ).css("display", "block")
+
+		 },
+		 error: function(err, rx){
+			 console.log(data)
+			 $( "#responseerror" ).text("A problem has occured, please retry!!")
+			 $( "#response" ).text("")
+		 }
+  });
+});
