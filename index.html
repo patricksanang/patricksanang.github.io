@@ -57,7 +57,19 @@
 
 	  gtag('config', 'UA-124365563-1');
 	</script>
-
+	<script>
+	  window.watsonAssistantChatOptions = {
+	      integrationID: "39e865b0-5685-44ee-abde-1468b2990b8d", // The ID of this integration.
+	      region: "eu-de", // The region your integration is hosted in.
+	      serviceInstanceID: "7e33a877-ad94-4425-9f6d-997e63b36e5a", // The ID of your service instance.
+	      onLoad: function(instance) { instance.render(); }
+	    };
+	  setTimeout(function(){
+	    const t=document.createElement('script');
+	    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+	    document.head.appendChild(t);
+	  });
+	</script>
 
 	</head>
 
